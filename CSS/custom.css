@@ -1,0 +1,102 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        width: 100%;
+        background-color: steelblue;
+        overflow: hidden;
+    }
+    
+    header h1 {
+        color: white;
+        /* float: left; */
+        padding: 10px;
+    }
+    
+    nav {
+        /* float: right; */
+    }
+    
+    nav ul {
+        padding-left: 20px;
+        display: inline-block;
+    }
+    
+    nav ul li {
+        color: white;
+        list-style: none;
+        padding: 20px 20px;
+    }
+    
+    .container_header {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 443px 415px;
+        grid-template-rows: 75px;
+        grid-column-gap: 500px;
+    }
+    
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .banner {
+        background-image: url(../img/IT.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .banner h2 {
+        font-size: 30px;
+        padding: 250px 0 250px 0;
+    }
+    
+    .banner p {
+        padding: 2px 2px;
+    }
+    
+    .skills {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .skills-subject {
+        width: 350px;
+        text-align: center;
+    }
+    
+    .skills-subject i {
+        font-size: 150px;
+    }
+    
+    .skills-subject p {
+        padding-top: 20px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+    }
+    
+    @media only screen and (max-width:430px) {
+        nav {
+            display: none;
+        }
+        .skills {
+            width: 100%;
+            margin: auto;
+            /* display: none; */
+        }
+        .skills-subject {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+    }
